@@ -28,6 +28,7 @@ resource "aws_rds_cluster" "app2-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "d33c9292-952b-4c1f-9973-b6dbad519461"
   }
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app3-rds-cluster" {
@@ -141,4 +142,5 @@ resource "aws_rds_cluster" "app9-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "a0c98536-c751-4743-92f1-a106ce750249"
   }
+  storage_encrypted = true
 }
